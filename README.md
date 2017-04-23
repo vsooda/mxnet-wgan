@@ -4,8 +4,7 @@ mxnet implement for Conditional Wasserstein GAN
 
 ## usage
 
-You only need to change the `is_wgan` flag to test wgan or dcgan results. change `is_mlp` to test mlp result.
-
+You only need to change the `is_wgan` flag to test wgan or dcgan results. change `is_mlp` to test mlp result. 
 
 
 ## results
@@ -28,6 +27,7 @@ note:
 
 * because we want to try mlp result, so I flatten the input image to a vector, then append condition one-hot vector to the vector. If you only want to try Convolution ops, you will not need to add condition in this way
 * wgan seems not better than dcgan, maybe something wrong. If you know what happen, please let me know.
+* you can learn a lot about how to construct data iterator, how to backward without output layer
 
 
 
